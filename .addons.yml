@@ -1,0 +1,6 @@
+channel: stable
+addons:
+  example:
+    repository: shawly/hassio-api-scapegoat
+    target: api-scapegoat
+    image: hassiofun/api-scapegoat-{arch}
