@@ -5,11 +5,13 @@
   "description": "API gateway with failover for REST sensors.",
   "url": "https://github.com/shawly/hassio-api-scapegoat",
   "startup": "services",
+  "ingress": true,
+  "ingress_port": 1337,
   "ports": {
-    "7069/tcp": 7069
+    "80/tcp": null
   },
   "ports_description": {
-    "7069/tcp": "API Scapegoat Gateway"
+    "80/tcp": "Not required for Ingress"
   },
   "arch": [
     "aarch64",
@@ -20,17 +22,24 @@
   ],
   "init": false,
   "map": [
-    "config:rw"
+    "config:rw",
+    "ssl:ro"
   ],
   "boot": "auto",
   "hassio_api": true,
   "hassio_role": "default",
   "options": {
     "log_level": "info",
+    "ssl": true,
+    "certfile": "fullchain.pem",
+    "keyfile": "privkey.pem",
     "apis": []
   },
   "schema": {
     "log_level": "list(trace|debug|info|notice|warning|error|fatal)",
+    "certfile": "str",
+    "keyfile": "str",
+    "ssl": "bool",
     "apis": [
       {
         "host": "str",

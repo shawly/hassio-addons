@@ -12,7 +12,7 @@ I created this add-on because there are devices which lose their network capabil
 
 With this add-on you can
 
-- a proxy for every API in your home
+- configure a proxy for every API in your home
 - return a custom response when the target host is unreachable
 
 A good example for this would be my TV, it's connected to a master-slave power strip which turns on or off depending on the power consumption of my AVR.  
