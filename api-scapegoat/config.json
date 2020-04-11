@@ -1,0 +1,49 @@
+{
+  "name": "API Scapegoat",
+  "version": "1.0.0",
+  "slug": "api-scapegoat",
+  "description": "API gateway with failover for REST sensors.",
+  "url": "https://github.com/shawly/hassio-api-scapegoat",
+  "startup": "services",
+  "ports": {
+    "7069/tcp": 7069
+  },
+  "ports_description": {
+    "7069/tcp": "API Scapegoat Gateway"
+  },
+  "arch": [
+    "aarch64",
+    "amd64",
+    "armhf",
+    "armv7",
+    "i386"
+  ],
+  "init": false,
+  "map": [
+    "config:rw"
+  ],
+  "boot": "auto",
+  "hassio_api": true,
+  "hassio_role": "default",
+  "options": {
+    "log_level": "info",
+    "apis": []
+  },
+  "schema": {
+    "log_level": "list(trace|debug|info|notice|warning|error|fatal)",
+    "apis": [
+      {
+        "host": "str",
+        "port": "int(1,65535)",
+        "failover": {
+          "response": {
+            "content-type": "str",
+            "body": "str",
+            "status-code": "int(100,599)"
+          }
+        }
+      }
+    ]
+  },
+  "image": "shawly/hassio-api-scapegoat-{arch}"
+}
