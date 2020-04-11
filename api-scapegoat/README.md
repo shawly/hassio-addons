@@ -19,7 +19,7 @@ A good example for this would be my TV, it's connected to a master-slave power s
 This means that when my AVR is in standby, my TV's power is fully cut off, meaning it's API can't be accessed anymore so my sensors will log errors until the TV has it's power back.
 
 With API Scapegoat I can now create a proxy to my TV's API, returning a default response for when it becomes unreachable.  
-I simply return the default API response for when my TV is in standby.
+I simply return the same API response for when my TV is in standby.
 
 ```json
 { 
