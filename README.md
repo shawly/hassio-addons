@@ -26,6 +26,20 @@ https://github.com/shawly/hassio-addons
 
 ## Add-ons provided by this repository
 
+### &#10003; [API Scapegoat][addon-apiscapegoat]
+
+![Latest Version][apiscapegoat-version-shield]
+![Supports armhf Architecture][apiscapegoat-armhf-shield]
+![Supports armv7 Architecture][apiscapegoat-armv7-shield]
+![Supports aarch64 Architecture][apiscapegoat-aarch64-shield]
+![Supports amd64 Architecture][apiscapegoat-amd64-shield]
+![Supports i386 Architecture][apiscapegoat-i386-shield]
+![Docker Pulls][apiscapegoat-pulls-shield]
+
+API gateway with failover for REST sensors.
+
+[:books: API Scapegoat add-on documentation][addon-doc-apiscapegoat]
+
 ## Releases
 
 Releases are based on [Semantic Versioning][semver], and use the format
@@ -40,6 +54,7 @@ based on the following:
 
 Got questions?
 
+- [Open an issue for the add-on: API Scapegoat][apiscapegoat-issue]
 
 For a general repository issue or add-on ideas [open an issue here][issue]
 
@@ -67,6 +82,16 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+[addon-apiscapegoat]: https://github.com/shawly/hassio-api-scapegoat/tree/v1.0.0
+[addon-doc-apiscapegoat]: https://github.com/shawly/hassio-api-scapegoat/blob/v1.0.0/README.md
+[apiscapegoat-issue]: https://github.com/shawly/hassio-api-scapegoat/issues
+[apiscapegoat-version-shield]: https://img.shields.io/badge/version-v1.0.0-blue.svg
+[apiscapegoat-pulls-shield]: https://img.shields.io/docker/pulls/hassiofun/api-scapegoat-armhf.svg
+[apiscapegoat-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
+[apiscapegoat-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
+[apiscapegoat-armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
+[apiscapegoat-armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
+[apiscapegoat-i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 [shawly]: https://github.com/shawly
 [gitlabci-shield]: https://gitlab.com/shawly/hassio-addons/badges/master/pipeline.svg
 [gitlabci]: https://gitlab.com/shawly/hassio-addons/pipelines
