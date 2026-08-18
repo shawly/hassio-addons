@@ -1,0 +1,15 @@
+---
+name: Sync labels
+
+# yamllint disable-line rule:truthy
+on:
+  schedule:
+    - cron: "34 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  workflows:
+    uses: hassio-addons/workflows/.github/workflows/labels.yaml@c953d10f34dac22eb68c1cdedbbc4106a89bef88 # v3.0.1

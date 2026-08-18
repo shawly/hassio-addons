@@ -1,0 +1,7 @@
+---
+channel: stable
+apps:
+  healthchecks:
+    repository: shawly/hassio-app-healthchecks
+    target: healthchecks
+    image: ghcr.io/shawly/hassio-addons/healthchecks
