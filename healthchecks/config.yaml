@@ -1,6 +1,5 @@
----
 name: Healthchecks
-version: 1.0.0
+version: 1.0.1
 slug: healthchecks
 description: Self-hosted cron job and background task monitoring
 url: https://github.com/shawly/hassio-app-healthchecks
@@ -11,10 +10,10 @@ init: false
 panel_icon: mdi:heart-pulse
 panel_title: Healthchecks
 arch:
-  - aarch64
-  - amd64
+- aarch64
+- amd64
 map:
-  - ssl
+- ssl
 ports:
   8000/tcp: 8000
 ports_description:
@@ -52,7 +51,7 @@ schema:
   smtp_from: str?
   smtpd_port: port?
   csrf_trusted_origins:
-    - str
+  - str
   ssl: bool
   certfile: str
   keyfile: str
