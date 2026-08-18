@@ -39,9 +39,9 @@ based on the following:
 
 MIT License. See [LICENSE.md](LICENSE.md).
 
-[app-healthchecks]: https://github.com/shawly/hassio-app-healthchecks/tree/v1.0.1
-[app-doc-healthchecks]: https://github.com/shawly/hassio-app-healthchecks/blob/v1.0.1/README.md
-[healthchecks-version-shield]: https://img.shields.io/badge/version-v1.0.1-blue.svg
+[app-healthchecks]: https://github.com/shawly/hassio-app-healthchecks/tree/v1.0.2
+[app-doc-healthchecks]: https://github.com/shawly/hassio-app-healthchecks/blob/v1.0.2/README.md
+[healthchecks-version-shield]: https://img.shields.io/badge/version-v1.0.2-blue.svg
 [healthchecks-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [healthchecks-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [community-apps]: https://github.com/hassio-addons/repository

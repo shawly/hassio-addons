@@ -15,9 +15,9 @@ panel, and on a mapped port that the monitored machines send their pings to.
 
 [:books: Read the full app documentation][docs]
 
-[docs]: https://github.com/shawly/hassio-app-healthchecks/blob/v1.0.1/healthchecks/DOCS.md
+[docs]: https://github.com/shawly/hassio-app-healthchecks/blob/v1.0.2/healthchecks/DOCS.md
 [healthchecks]: https://github.com/healthchecks/healthchecks
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2026.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
-[release-shield]: https://img.shields.io/badge/version-v1.0.1-blue.svg
-[release]: https://github.com/shawly/hassio-app-healthchecks/tree/v1.0.1
+[release-shield]: https://img.shields.io/badge/version-v1.0.2-blue.svg
+[release]: https://github.com/shawly/hassio-app-healthchecks/tree/v1.0.2

@@ -1,1 +1,1 @@
-Fixes the ingress panel returning an nginx 404. Home Assistant removes the `/api/hassio_ingress/<token>` prefix before forwarding a request, so nginx now serves the app at the root of the ingress port.
+Status badge URLs, e-mail links and OAuth redirect URIs generated from the ingress interface no longer carry the `/api/hassio_ingress/<token>` prefix on top of the mapped port's address.

@@ -1,5 +1,5 @@
 name: Healthchecks
-version: 1.0.1
+version: 1.0.2
 slug: healthchecks
 description: Self-hosted cron job and background task monitoring
 url: https://github.com/shawly/hassio-app-healthchecks
