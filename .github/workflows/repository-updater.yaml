@@ -1,0 +1,40 @@
+---
+name: Repository Updater
+
+# yamllint disable-line rule:truthy
+on:
+  repository_dispatch:
+    types:
+      - update
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: queue
+
+jobs:
+  publish:
+    name: Publish app update
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚀 Run Repository Updater
+        uses: hassio-addons/repository-updater@88408cfe4468560e649cb9c227431a696c9298ea # v2.0.1
+        env:
+          # Left to itself the updater takes its git identity from the token
+          # owner's profile, so automated bumps land as if a person wrote them.
+          # It also only sets user.email when the profile has a *public* address,
+          # which this account does not, and git then refuses to commit at all.
+          # Both problems go away by attributing the commits to the bot.
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+        with:
+          # No 'app' input on purpose. The dispatch payload carries the ghcr
+          # image path rather than a slug this repository knows, so filtering on
+          # it would match nothing. Reconciling every app in .apps.yml is both
+          # correct and cheap.
+          repository: ${{ github.repository }}
+          token: ${{ secrets.UPDATER_TOKEN }}
