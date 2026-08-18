@@ -16,6 +16,12 @@ panel, and on a mapped port that your monitored machines send their pings to.
 
 [:books: Read the full add-on documentation][docs]
 
+## Disclaimer
+
+This add-on is written with AI assistance, heavily, start to finish. If that bothers you,
+do not install it. It exists because I wanted it to exist, and it stops being maintained
+the moment I stop wanting it to, with no deprecation window and no announcement.
+
 ## Installation
 
 Add this repository to your Home Assistant instance and install the

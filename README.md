@@ -6,12 +6,28 @@
 
 ## About
 
-A Home Assistant add-on repository for my personal add-ons. Feel free to try them out,
-though they may be work in progress or tailored to my own setup.
+A Home Assistant add-on repository for my personal add-ons. They exist because I wanted
+them to exist. They will stop existing the moment I stop wanting them to, with no
+deprecation window, no migration path and no announcement.
 
 The structure and tooling follow the
 [Home Assistant Community Add-ons][community-addons] repository, so add-ons here are
 built, published and updated the same way.
+
+## Disclaimer
+
+These add-ons are written with AI assistance. Heavily. Start to finish.
+
+If that bothers you, the remedy is to not install them. It is not to open an issue
+telling me about it. The code is sitting right there in the open; read it, run it through
+whatever scanner makes you feel better, or walk away. All three are fine.
+
+I am not going to debate whether this counts as real engineering. I am not going to
+annotate which lines came from where. I am not going to promise it will not happen again,
+because it will happen again, on the next commit.
+
+Reproducible bugs are still bugs and I might even look at one. Opinions about how the
+code came to exist go straight in the bin.
 
 ## Installation
 
@@ -43,7 +59,7 @@ API gateway with failover for REST sensors.
 ![Supports aarch64 Architecture][healthchecks-aarch64-shield]
 ![Supports amd64 Architecture][healthchecks-amd64-shield]
 
-Self-hosted cron job and background task monitoring.
+Self-hosted cron job and background task monitoring
 
 [:books: Healthchecks add-on documentation][addon-doc-healthchecks]
 

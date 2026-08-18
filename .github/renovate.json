@@ -4,7 +4,7 @@
   "rebaseWhen": "behind-base-branch",
   "dependencyDashboard": true,
   "labels": ["dependencies", "no-stale"],
-  "commitMessagePrefix": "⬆️",
+  "commitMessagePrefix": ":arrow_up:",
   "commitMessageTopic": "{{depName}}",
   "packageRules": [
     {
