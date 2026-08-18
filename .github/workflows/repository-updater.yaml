@@ -1,0 +1,18 @@
+---
+name: Repository Updater
+
+# yamllint disable-line rule:truthy
+on:
+  repository_dispatch:
+    types:
+      - update
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  workflows:
+    uses: hassio-addons/workflows/.github/workflows/repository-updater.yaml@c953d10f34dac22eb68c1cdedbbc4106a89bef88 # v3.0.1
+    secrets:
+      UPDATER_TOKEN: ${{ secrets.UPDATER_TOKEN }}

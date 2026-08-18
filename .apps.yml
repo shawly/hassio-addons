@@ -1,6 +1,11 @@
+---
 channel: stable
-addons:
+apps:
   apiscapegoat:
     repository: shawly/hassio-api-scapegoat
     target: api-scapegoat
     image: hassiofun/api-scapegoat-{arch}
+  healthchecks:
+    repository: shawly/hassio-app-healthchecks
+    target: healthchecks
+    image: ghcr.io/shawly/healthchecks
