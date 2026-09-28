@@ -3,6 +3,10 @@ name: Stale
 
 # yamllint disable-line rule:truthy
 on:
+  # Gives a Dependabot bump of this file a real run before merge.
+  pull_request:
+    paths:
+      - .github/workflows/stale.yaml
   schedule:
     - cron: "0 8 * * *"
   workflow_dispatch:

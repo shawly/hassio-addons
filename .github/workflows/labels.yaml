@@ -3,6 +3,10 @@ name: Sync labels
 
 # yamllint disable-line rule:truthy
 on:
+  # Gives a Dependabot bump of this file a real run before merge.
+  pull_request:
+    paths:
+      - .github/workflows/labels.yaml
   schedule:
     - cron: "34 5 * * *"
   workflow_dispatch:

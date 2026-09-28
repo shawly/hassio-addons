@@ -3,6 +3,10 @@ name: Lock
 
 # yamllint disable-line rule:truthy
 on:
+  # Gives a Dependabot bump of this file a real run before merge.
+  pull_request:
+    paths:
+      - .github/workflows/lock.yaml
   schedule:
     - cron: "0 9 * * *"
   workflow_dispatch:
